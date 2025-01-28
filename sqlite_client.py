@@ -1,7 +1,7 @@
 import sqlite3
 
 def setup_database():
-    conn = sqlite3.connect("flats.db")
+    conn = sqlite3.connect("data/flats.db")
     cursor = conn.cursor()
     cursor.execute('''CREATE TABLE IF NOT EXISTS flats (
                         id INTEGER PRIMARY KEY AUTOINCREMENT,
