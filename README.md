@@ -35,15 +35,23 @@ To ensure persistence for logs or other data, define a volume in your `docker-co
 
 ```yaml
 version: '3.8'
+
 services:
   immowelt-parser:
-    build: .
+    image: iuda194/immowelt_parser
     environment:
-      - BOT_TOKEN=${BOT_TOKEN}
       - CHAT_ID=${CHAT_ID}
       - URL=${URL}
+      - BOT_TOKEN=${BOT_TOKEN}
+    secrets:
+      - bot_token
     volumes:
       - ./data:/app/data
+
+secrets:
+  bot_token:
+    file: ./secrets/bot_token
+
 ```
 
 ### Installation
