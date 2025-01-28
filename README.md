@@ -74,7 +74,6 @@ Contributions are welcome! Feel free to submit a pull request or open an issue f
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Acknowledgments
-- Thanks to [Immowelt](https://www.immowelt.de/) for providing the data.
 - Built using Python and Telegram Bot API.
 
 
